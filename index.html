@@ -1,72 +1,87 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Play List Video</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: auto;
-            background-color: #f9f9f9;
-        }
-        .container {
-            background: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-            display: inline-block;
-            max-width: 400px;
-        }
-        h1 {
-            color: #333;
-        }
-        .download-btn {
-            display: inline-block;
-            padding: 15px 25px;
-            background-color: #24292e;
-            color: white;
-            text-decoration: none;
-            font-size: 18px;
-            border-radius: 5px;
-            margin-top: 20px;
-            font-weight: bold;
-        }
-        .download-btn:hover {
-            background-color: #000;
-        }
-        .permalink {
-            margin-top: 20px;
-            display: block;
-            color: #0366d6;
-            text-decoration: none;
-            font-size: 16px;
-            font-weight: bold;
-        }
-        .permalink:hover {
-            text-decoration: underline;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Play List Video</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 10px;
+    }
+    .container {
+      width: 100%;
+      max-width: 360px;
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h1 {
+      font-size: 20px;
+      color: #333;
+      margin-bottom: 20px;
+    }
+    .download-btn {
+      display: block;
+      width: 100%;
+      padding: 14px;
+      background-color: #24292e;
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      border-radius: 6px;
+      margin: 10px 0;
+      font-weight: bold;
+      transition: background 0.3s;
+      word-wrap: break-word;
+    }
+    .download-btn:hover {
+      background-color: #000;
+    }
+
+    .gif-btn img {
+      width: 100%;
+      border-radius: 8px;
+      margin-top: 12px;
+    }
+
+    /* Khusus layar kecil */
+    @media (max-width: 480px) {
+      body { padding: 10px; }
+      .container { padding: 16px; }
+      h1 { font-size: 18px; }
+      .download-btn { font-size: 15px; padding: 12px; }
+    }
+  </style>
 </head>
 <body>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-    <div class="container">
-        <h1>Click Link to Watch</h1>
-        
-        <p></p>
-        <a href="https://cupang1230.github.io/yvfbEX3q1.mp4" class="download-btn">https://cdn.videy.co/yvfbEX3q1.mp4</a>		
-		<p></p>
-<script async="async" data-cfasync="false" src="//maintaintournamentslick.com/f7fc0a99721bb4a327aa256bf1adf6b9/invoke.js"></script>
-<div id="container-f7fc0a99721bb4a327aa256bf1adf6b9"></div>
-        
-    </div>
+
+  <div class="container">
+    <h1>Click Link to Watch</h1>
+
+    <a href="https://cupang1230.github.io/yvfbEX3q1.mp4" class="download-btn">
+      https://cdn.videy.co/yvfbEX3q1.mp4
+    </a>
+
+    <!-- Tombol GIF -->
+    <a href="https://crewfebruary.com/n9m3b57fv?key=0a64f9916534d0047e6aa57b2cbc9c54" class="gif-btn">
+      <img src="https://cdn.storageimagedisplay.com/349/34c/ec9/320x50_2_iam18.gif" alt="Iklan GIF">
+    </a>
+
+  </div>
 
 </body>
-
 </html>
